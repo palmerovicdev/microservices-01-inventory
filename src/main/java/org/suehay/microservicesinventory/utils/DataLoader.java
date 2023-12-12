@@ -16,7 +16,7 @@ public class DataLoader implements CommandLineRunner {
     private final InventoryEntityRepository inventoryEntityRepository;
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args){
         log.info("Loading data...");
         inventoryEntityRepository.saveAll(
                 List.of(
