@@ -28,7 +28,7 @@ public class InventoryController {
         return ResponseEntity.status(HttpStatus.OK).body(this.inventoryService.isInStock(sku));
     }
 
-    @GetMapping("/in-stock")
+    @PostMapping("/in-stock")
     @ResponseStatus(HttpStatus.OK)
     @Operation(summary = "Get inventory by sku", description = "Get inventory by sku", tags = {"inventory"}, operationId = "get", responses = {
             @io.swagger.v3.oas.annotations.responses.ApiResponse(responseCode = "200", description = "Inventory found"),

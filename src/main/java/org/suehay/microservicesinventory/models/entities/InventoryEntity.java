@@ -12,6 +12,7 @@ import org.hibernate.type.SqlTypes;
 @NoArgsConstructor
 @Entity(name = "inventory")
 @Table(name = "inventory")
+@Builder
 public class InventoryEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
